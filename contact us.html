@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="thaer naem"/>
+        <title>On Road</title>
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/contact us-style.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <style>
+             body 
+             {
+                 margin:0px;
+                 padding:0px;
+                 background-image:url('images/contact 1.jpg');
+                 background-size:cover;
+                 background-attachment:fixed;
+                 background-position: 0 -230px;
+                 font-family: Arial;
+                 text-transform:capitalize;
+                 opacity: 0;
+                 animation: backgroundd 2s ease-in-out 1 forwards;
+             }
+
+             @keyframes backgroundd {
+                 0% {
+                    opacity: 0;
+                 }
+                 100% {
+                    opacity: 1;
+                 }
+             }
+        </style>
+        <script>
+           function Check() {
+               alert('Sorry, your info incomplete, please chick it again');
+           }
+        </script>
+    </head>
+    <body>
+
+
+        <!--Start Header-->
+        <header>
+            on road
+            <span></span>
+            <span></span>
+            <span></span>
+        </header>
+        <!--Start Header-->
+
+        <!--Start Navigation-->
+        <nav>
+            <div class="audio1"> 
+                <audio controls autoplay loop>
+                    <source src="media/nfs-run.mp3" type="audio/mpeg" />
+                </audio>
+            </div>
+            <ul>
+
+                <li>
+                    <span></span>
+                    <span></span>
+                    <a href="index (0.0.2).html">Home</a>
+                </li>
+
+                <li>
+                    <span></span>
+                    <span></span>
+                    <a href="categories.html">Categories</a>
+                </li>
+
+                <li class="active">
+                    <span></span>
+                    <span></span>
+                    <a>Contact us</a>
+                </li>
+
+                <li>
+                    <span></span>
+                    <span></span>
+                    <a href="costumize.html">Costumize</a>
+                </li>
+
+            </ul>
+        </nav>
+        <!--End Navigation-->
+
+
+        <!--Start Sign up Form-->
+        <div class=".main-container">
+            <form name="Data" action="dad.php" method="get" target="_blank">
+                <fieldset>
+                    <legend>Personal information</legend>
+
+                    <label>Username</label>
+                    <input  type="text" 
+                                name="username" 
+                                placeholder="Username" 
+                                maxlength="15" 
+                                pattern="[A-Za-z]{4}" 
+                                autofocus="on"
+                                autocomplete="off" 
+                                required />
+
+                    <label>Password</label>
+                    <input   type="password" 
+                                name="passowrd" 
+                                placeholder="Password/10*" 
+                                maxlength="6" 
+                                pattern="[a-z]{6}" 
+                                required />
+
+                    <label>E-mail</label>
+                    <input   type="email" 
+                                name="email" 
+                                placeholder="Email"
+                                autocomplete="off"  
+                                required />
+                    <label>
+                        <input type="checkbox" name="remember me"/>
+                        <label>Remember me</label>
+                        <input type="submit" value="Sign up"/>
+                        <input type="button" value="Check your Data" onclick="Check()"/>
+                        <input type="reset" value="Restart"/>
+                    </label>
+                </fieldset>
+            </form>
+        </div>
+    
+        <!--End Sign up Form-->
+
+        <!--Start Call-->
+
+        <div class="main-container">
+            <div class="border11">
+                <span>On Road</span>
+            </div>
+            <article>
+                <section>
+                    <img src="images/porsch carera 5.jpg" alt="porsch carera" />
+                    <img src="images/porsch carera 5.1.jpg" alt="porsch carera" title="The statistic/C Garage" />
+                    <img src="images/porsch carera 5.2.jpg" alt="porsch carera"  title="The statistic/C Garage"/>
+                    <img src="images/porsch carera 5.3.jpg" alt="porsch carera" title="Maratani Garage" />
+                    <h2>Delivery :</h2>
+                    <p>Delivery service to your ordinary garage as soon as we finish your car customising. </p>
+                </section>
+                <section>
+                    <img src="images/porsch carera 4.jpg" alt="porsch carera" />
+                    <img src="images/porsch carera 4.1.jpg" alt="porsch carera"  title="The High Road of Maratani" />
+                    <img src="images/porsch carera 4.2.jpg" alt="porsch carera"  title="Statistic/C 1 Mile" />
+                    <img src="images/porsch carera 4.3.jpg" alt="porsch carera"  title="Coro Race Loop" />
+                    <h2>Training Run on Road :</h2>
+                    <p>Call you to try your car on some of our raod races where you can test it's performance. </p>
+                </section>
+            </article>
+            
+        </div>
+
+        <!--Start Call-->
+
+        <!--Start Footer-->
+        <footer>
+            <div class="main-container">
+                <section>
+                    <div>
+                        <h3>On Road :</h3>
+                        <p> We put wheels with the right size and high quality
+                                performance. and always make sure to be on the
+                                right road where you want to drive.
+                        </p>
+                    </div>
+                    <div>
+                        <ul>
+
+                            <li class="active">
+                                <span></span>
+                                <span></span>
+                                <a href="">Home</a>
+                                <div class="hov"></div>
+                            </li>
+        
+                            <li>
+                                <span></span>
+                                <span></span>
+                                <a href="Categories.html">Categories</a>
+                                <div class="hov"></div>
+                            </li>
+        
+                            <li>
+                                <span></span>
+                                <span></span>
+                                <a href="contact us.html">Contact us</a>
+                                <div class="hov"></div>
+                            </li>
+        
+                            <li>
+                                <span></span>
+                                <span></span>
+                                <a href="#">Portfolio</a>
+                                <div class="hov"></div>
+                            </li>
+                            
+                            <li>
+                                <span></span>
+                                <span></span>
+                                <a href="#">Sign up</a>
+                                <div class="hov"></div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope" aria-hidden="true"></i> : OnRoad@443gmail.com<br>
+                        <i class="fa fa-phone-square" aria-hidden="true"></i> : +963 996 584 322<br>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp; city / on the part 4 of city center.<br>
+                        <i class="fa fa-info-circle" aria-hidden="true"></i> &nbsp; more information about us.
+                    </div>
+                    
+                </section>
+                <p>copyright &copy; 2020 all Right reserved to On Road &reg; team</p>
+                <div class="end">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i> 
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </div>
+            </div>
+        </footer>
+        <!--End Footer-->
+
+
+      <script src="js/jquery-3.5.1.min.js"></script>
+      <script src="js/plugins.js"></script>
+    </body>
+</html>

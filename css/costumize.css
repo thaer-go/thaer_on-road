@@ -1,0 +1,274 @@
+/* Start Main Rulez */
+* {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.main-container {
+    width: 1580px;
+    padding: 2px 5px 2px 5px;
+    margin: 0 auto;
+}
+
+/* End Main Rulez */
+
+/* Start Header */
+
+header {
+    background-color:rgba(6, 48, 126, 0.8);
+    color:rgba(6, 48, 126, 0.01);
+    box-shadow: 0 2px 10px rgba(6, 48, 126, 0.8);
+    font-size: 80px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: none;
+    padding: 70px 10px;
+    text-transform: uppercase;
+    position: relative;
+    animation: hoverhd 1s ease-in-out 2s 1 forwards;
+    overflow: hidden;
+}
+
+header::after {
+    content: "Team";
+    font-size: 20px;
+    letter-spacing: 0px;
+    color:rgba(6, 48, 126);
+    margin-left: -20px;
+    text-shadow: none;
+    animation: afterr .5s ease-in-out 2.8s 1 forwards;
+    opacity: 0;
+}
+
+header span {
+    width: 30px;
+    height: 284px;
+    border-radius: 100px;
+    background-color: rgb(129, 80, 245);
+    box-shadow: 1px 1px 10px rgb(129, 80, 245),
+                     -1px -1px 10px rgb(129, 80, 245);
+    opacity: .2;
+    position: absolute;
+    top: -34px;
+    left: -232px;
+    opacity: 1;
+    transform: rotate(12deg);
+    opacity: 1;
+}
+
+header span:first-child {
+    animation: movefast .7s ease-in-out 1s;
+}
+
+header span:nth-child(2) {
+    animation: movefast .7s ease-in-out 1.2s;
+}
+
+header span:last-child {
+    animation: movefast .7s ease-in-out 1.8s;
+}
+
+@keyframes movefast {
+    0% {
+        left: -232px;  
+        opacity: 1;
+    }
+    100% {
+        left: 1525px;  
+        opacity: 0;
+    }
+}
+
+@keyframes hoverhd {
+    0% {
+        color:rgba(6, 48, 126, 0.01);
+        text-shadow: none;
+    }
+    90% {
+        color: #FFF;
+    }
+    100% {
+        color: #FFF;
+        text-shadow: -1px 1px 4px #FFF;
+    }
+}
+
+@keyframes afterr {
+    0% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        text-shadow: -1px 1px 4px #FFF;
+    }
+}
+
+/* End Header */
+
+/* Start Navigation */
+
+nav{
+    background-color:rgba(6, 48, 126,0.28);
+    margin: 2px auto;
+    padding: 7px 0;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 3px rgba(6, 48, 126,0.28),
+                        0 -2px 3px rgba(6, 48, 126,0.28);
+}
+
+nav .audio1 {
+    position: fixed;
+    top: 239px;
+    left: 10px;
+    height: 44px;
+    width: 10px;
+    transition: width .6s ease-in-out;
+    border-radius: 100px;
+}
+
+nav .audio1:hover {
+    width:300px;
+}
+
+nav .audio1 audio {
+    height: 100%;
+    width: 100%;
+    box-shadow: 1px 2px 2px #444;
+    border-radius: 100px;
+}
+
+ nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+nav ul li {
+    display:inline-block;
+    position: relative;
+    width: 160px;
+    height: 40px;
+    margin: 2px 40px;
+    border-radius:5px;
+    transition:all .3s ease-in-out;
+}
+
+nav ul li span{
+    position: absolute;
+    height: 40px;
+    top: 0;
+    background-color: rgba(1, 38, 105, 0.95);
+    transition: all .22s ease-out;
+}
+
+nav ul li span:first-of-type {
+    right: 0;
+    width: 0px;
+    border-radius: 0 5px 5px 0; 
+}
+
+nav ul li span:last-of-type {
+    left: 0;
+    width: 0px;
+    border-radius: 5px 0 0 5px;
+}
+
+nav ul li a {
+    display: block;
+    position: relative;
+    height: 40px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    top: 0;
+    color: #FFF;
+    text-shadow: -1px 1px 1px #000;
+}
+
+nav ul .active a {
+    color: rgb(0, 255, 0);
+    border-radius: 5px;
+    text-shadow: -1px 1px 1px #333;
+    box-shadow: 0 1px 3px rgb(0, 255, 0);
+}
+
+nav ul li:first-child:hover span {
+    width: 80px;
+    animation: change .8s ease-in-out 1s 1 forwards;
+}
+
+nav ul li:first-child:hover span {
+    width: 80px;
+    animation: change .8s ease-in-out 1s 1 forwards;
+}
+
+nav ul li:nth-child(2):hover span {
+    width: 80px;
+    animation: change .8s ease-in-out 1s 1 forwards;
+}
+
+nav ul li:nth-child(3):hover span {
+    width: 80px;
+}
+
+nav ul li:last-child:hover span {
+    width: 80px;
+    animation: change .8s ease-in-out 1s 1 forwards;
+}
+
+@keyframes change {
+    0% {
+        background-color: rgba(1, 38, 105, 0.95);
+    }
+    100% {
+        background-color: rgb(62, 38, 119);
+    }
+}
+
+/* End Navigation */
+
+/* Waiting */
+
+.custim {
+    width: 1000px;
+    padding: 30px 60px;
+    height: 200px;
+    line-height: 150px;
+    margin: 60px auto;
+    text-align: center;
+    font-size: 60px;
+    font-family: Helvetica;
+    color: #FFF;
+    text-shadow: -1px 2px 1px rgba(9, 19, 51, 0.952);
+    box-shadow: -1px 2px 2px rgba(15, 33, 95, 0.733);
+    background-color: rgba(40, 89, 250, 0.4);
+    border: 2px solid #FFF;
+    border-radius: 15px;
+    transition: all 1s ease-in-out;
+}
+
+.custim:after {
+    content: " 2% ";
+    color: #FF0;
+    font-size: 50px;
+    position: relative;
+    top: -42px;
+    right: 12px;
+}
+
+.custim:hover {
+    background-color: rgba(40, 89, 250, 0.9);
+    text-shadow: -1.5px 2.5px 1px rgba(9, 19, 51, 0.952);
+    transform: translate(0, 20px);
+}
+
+/* Waiting */
